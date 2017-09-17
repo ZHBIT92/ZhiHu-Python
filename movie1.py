@@ -20,7 +20,6 @@ def get_movie(url):
     将内容保存到列表
     并且返回一个装满url链接的列表
     '''
-    url_list = []
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
 
@@ -31,28 +30,30 @@ def get_movie(url):
     with open('movie_list.csv', 'w+') as f:
             f.write("")
 
-    for sum in sum_list:
+    # 找到全部小说名字，发现她们全部都包含在li标签中
+    movie_list = sum_list.find_all('li')
+    # 循环遍历每一个电影的名字以及链接
+    for movie in movie_list:
 
-        # 找到全部小说名字，发现她们全部都包含在li标签中
-        movie_list = sum_list.find_all('li')
-        # 循环遍历每一个电影的名字以及链接
-        for movie in movie_list:
-            link = 'http:' + movie.a['href']
-            title = movie.span.a.text
-            print(title)
-            # 将所有电影的url地址保存在一个列表变量里
-            url_list.append(link)
-            # 这里使用a模式,防止清空文件
-            with open('movie_list.csv', 'a') as f:
-                f.write("电影名: {:<} \t 电影地址: {:<} \n".format(title, link))
+        name = movie.span.a.text
+        #这里做一个异常捕获，防止没有上映时间的出现
+        try:
+            time = movie.find('span', class_='sIntro').text
+        except:
+            time = "暂无上映时间"
+        link = 'http:' + movie.a['href']
+        #找到影片简介
+        intro = movie.find('p', class_='pTxt pIntroShow').text
+        print("片名：{}\t{}\n{}\n{}\n \n ".format(name, time, link, intro))
 
-    return url_list
+        # 这里使用a模式,防止清空文件
+        with open('movie_list.csv', 'a') as f:
+            f.write("电影名: {:<} \t {}\n 电影地址: {:<} \n".format(name, time, link))
 
 def main():
 
    base_url= 'http://dianying.2345.com/top/'
-   url_list = get_movie(base_url)
+   get_movie(base_url)
 
 if __name__ == '__main__':
     main()
-
