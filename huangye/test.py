@@ -53,7 +53,6 @@ def get_qiye2(url, filename1):
                  for company2 in company2_list:
                     title2 = company2.a['title']
                     link = company2.a['href']
-                    print("公司名：{}\t{}\n ".format(title2, link))
 
                     filename = filename1+'/'+title2
                     if os.path.exists(filename):
@@ -65,16 +64,17 @@ def get_qiye2(url, filename1):
                     fanye(link, filename)
 
 def fanye(url, filename2):
-
+    black = '                     '
     with open(filename2+'/company_list.csv', 'w+') as f:
-                    f.write("公司名称 {:<} \t 联系人 {:<} \t 电话 {:<} \t 地址 {:<} \t\n ")
+                    f.write("公司名称" + black + "\t 联系人 " + "   " + "\t 电话 {:<}"
+                                + "    " + " \t 地址 {:<} \t\n ")
 
-    for page in range(1, 10):
+    for page in range(1, 1000):
        if page == 1:
            get_content(url, filename2)
        else:
-           url= url+'pn'+str(page)
-           get_content(url, filename2)
+           url1= url+'pn'+str(page)
+           get_content(url1, filename2)
 
 def get_content(url, filename3):
 
@@ -93,13 +93,16 @@ def get_content(url, filename3):
                 phone = content_list[1]
                 title = content_list[2]
                 data = get_content2(link+'company_map.html')
-
-                print("\t\t\t\t\n ".format(title, people, phone, data))
+                black = '     '
+                print(title)
                 # 这里使用a模式,防止清空文件
                 with open(filename3+'/company_list.csv', 'a') as f:
-                    f.write("\t\t\t\t\n ".format(title, people, phone, data))
-              except Exception as e:
-                   logging.exception(e)
+                    f.write('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\n'.format(title, black, people, black, phone, black, data))
+
+              except Exception:
+                   #logging.exception(e)
+                   error = []
+                   return error
 
 
 def get_content1(url):
@@ -131,7 +134,6 @@ def get_content2(url):
     for test in company1_list:
           data1 = test.text
     pydata = data1[5:]
-    print(pydata)
     return pydata
 
 def main():
