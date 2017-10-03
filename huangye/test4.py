@@ -1,6 +1,10 @@
 import requests
 import bs4
+from lxml import etree
 import logging
+from xlrd import open_workbook
+from xlutils.copy import copy
+from xlwt import *
 import os
 
 def get_html(url):
@@ -36,7 +40,6 @@ def get_qiye1(url):
 
 
 def get_qiye2(url, filename1):
-
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
 
@@ -64,71 +67,91 @@ def get_qiye2(url, filename1):
                     fanye(link, filename)
 
 def fanye(url, filename2):
-    black = '                     '
-    with open(filename2+'/company_list.csv', 'w+') as f:
-                    f.write("公司名称" + black + "\t 联系人 " + "   " + "\t 电话 {:<}"
-                                + "    " + " \t 地址 {:<} \t\n ")
-
+    w = Workbook(encoding='utf-8')
+    w.add_sheet('xlwt was here')
+    w.save(filename2+'/company_list.xls')
     for page in range(1, 1000):
+       j = (page-1)*20+1
        if page == 1:
-           get_content(url, filename2)
+           get_content(url, filename2, j)
        else:
            url1= url+'pn'+str(page)
-           get_content(url1, filename2)
+           get_content(url1, filename2, j)
 
-def get_content(url, filename3):
-
+def get_content(url, filename3, j):
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
 
+    rb = open_workbook(filename3+'/company_list.xls')
+    wb = copy(rb)
+    ws = wb.get_sheet(0)
+
     # 找到公司名字，发现她们全部都包含在a标签中
     company4_list = soup.find_all('div', attrs={'class': 'box'})
+
+    print(j)
     for test in company4_list:
-          company_list = test.find_all('dl')
-          for company in company_list:
-              try:
+        company_list = test.find_all('dl')
+        for company in company_list:
+            try:
                 link = company.h4.a['href']
                 content_list = get_content1(link+'company_contact.html')
-                people = content_list[0]
-                phone = content_list[1]
-                title = content_list[2]
+                title = content_list[0]
+                people = content_list[1]
+                phone = content_list[2]
                 data = get_content2(link+'company_map.html')
-                black = '     '
                 print(title)
-                # 这里使用a模式,防止清空文件
-                with open(filename3+'/company_list.csv', 'a') as f:
-                    f.write('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\n'.format(title, black, people, black, phone, black, data))
+                ws.write(j, 0, title)
+                ws.write(j, 1, people)
+                ws.write(j, 2, phone)
+                ws.write(j, 3, data)
+                wb.save(filename3+'/company_list.xls')
+                j = j+1
+            except Exception as e:
+                logging.exception(e)
 
-              except Exception:
-                   #logging.exception(e)
-                   error = []
-                   return error
 
 
 def get_content1(url):
 
     html = get_html(url)
-    soup = bs4.BeautifulSoup(html, 'lxml')
+    selector = etree.HTML(html)
+
+    lable_list = []
     content_list = []
-    txt = []
-    company1_list = soup.find_all('div', attrs={'class': 'r-content'})
+    content1_list = []
+    content2_list = []
+    company1_list = selector.xpath('//ul[@class="con-txt"]/li/text()')
+    company2_list = selector.xpath('//ul[@class="con-txt"]/li/a/text()')
+
     for test in company1_list:
-          company11_list = test.find_all('li')
-          for company in company11_list:
-                txt.append(company.text)
-    people = txt[0]
-    phone = txt[1]
-    cy = txt[2]
-    content_list.append(people[4:])
-    content_list.append(phone[3:])
-    content_list.append(cy[5:])
+           content1_list.append(test)
+    for test in company2_list:
+           content2_list.append(test)
+    for test in selector.xpath('//ul[@class="con-txt"]/li/*/text()'):
+           lable_list.append(test)
+    print(content1_list)
+    print(content2_list)
+    print(lable_list)
+
+    if(lable_list[1]=='手机：'):
+        people = content1_list[0]
+        title = content1_list[2]
+        phone = content1_list[1]
+    else:
+        people = content2_list[0]
+        phone = content1_list[0]
+        title = content1_list[1]
+    content_list.append(title)
+    content_list.append(people)
+    content_list.append(phone)
+    print(content_list)
     return content_list
 
 def get_content2(url):
 
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
-
     company1_list = soup.find_all('ul', attrs={'class': 'add-txt'})
 
     for test in company1_list:

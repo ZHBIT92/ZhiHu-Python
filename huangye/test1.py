@@ -1,7 +1,5 @@
 import requests
 import bs4
-import lxml.html
-import logging
 import os
 
 def get_html(url):
@@ -65,7 +63,7 @@ def get_qiye2(url, filename1):
 
 def fanye(url, filename2):
     black = '                     '
-    with open(filename2+'/company_list.csv', 'w+') as f:
+    with open(filename2+'/company_list.xls', 'w+') as f:
                     f.write("公司名称" + black + "\t 联系人 " + "   " + "\t 电话 {:<}"
                                 + "    " + " \t 地址 {:<} \t\n ")
 
@@ -98,7 +96,7 @@ def get_content(url, filename3):
                 black = '     '
                 print(title)
                 # 这里使用a模式,防止清空文件
-                with open(filename3+'/company_list.csv', 'a') as f:
+                with open(filename3+'/company_list.xls', 'a') as f:
                     f.write('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\n'.format(title, black, people, black, phone, black, data))
 
               except Exception:
@@ -118,10 +116,8 @@ def get_content1(url):
     company1_list = soup.find_all('div', attrs={'class': 'r-content'})
     for test in company1_list:
           company11_list = test.xpath('//ul[@class="con-txt"]/li/text()')
-          print(company11_list)
           for company in company11_list:
               lable = company.cssselect('lable')
-              print('运行')
               print(lable.text)
               '''
               if(content=="联系人"):
