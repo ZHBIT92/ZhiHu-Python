@@ -70,7 +70,7 @@ def fanye(url, filename2):
     w = Workbook(encoding='utf-8')
     w.add_sheet('xlwt was here')
     w.save(filename2+'/company_list.xls')
-    for page in range(1, 1000):
+    for page in range(1, 500):
        j = (page-1)*20+1
        if page == 1:
            get_content(url, filename2, j)
@@ -130,9 +130,6 @@ def get_content1(url):
            content2_list.append(test)
     for test in selector.xpath('//ul[@class="con-txt"]/li/*/text()'):
            lable_list.append(test)
-    print(content1_list)
-    print(content2_list)
-    print(lable_list)
 
     if(lable_list[1]=='手机：'):
         people = content1_list[0]
@@ -145,7 +142,6 @@ def get_content1(url):
     content_list.append(title)
     content_list.append(people)
     content_list.append(phone)
-    print(content_list)
     return content_list
 
 def get_content2(url):

@@ -1,5 +1,10 @@
 import requests
 import bs4
+from lxml import etree
+import logging
+from xlrd import open_workbook
+from xlutils.copy import copy
+from xlwt import *
 import os
 
 def get_html(url):
@@ -11,7 +16,7 @@ def get_html(url):
     except:
         return " Something Wrong！ "
 
-def get_qiye1(url, sum):
+def get_qiye1(url):
 
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
@@ -24,7 +29,8 @@ def get_qiye1(url, sum):
              for company1 in company1_list:
                  title1 = company1['title']
                  link = company1['href']
-                 filename = sum+'/'+title1
+                 base_dir = os.getcwd()
+                 filename = base_dir + '/企业名录/'+title1
                  if os.path.exists(filename):
                      print('爬取'+title1)
                  else:
@@ -34,7 +40,6 @@ def get_qiye1(url, sum):
 
 
 def get_qiye2(url, filename1):
-
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
 
@@ -62,74 +67,82 @@ def get_qiye2(url, filename1):
                     fanye(link, filename)
 
 def fanye(url, filename2):
-    black = '                     '
-    with open(filename2+'/company_list.xls', 'w+') as f:
-                    f.write("公司名称" + black + "\t 联系人 " + "   " + "\t 电话 {:<}"
-                                + "    " + " \t 地址 {:<} \t\n ")
-
-    for page in range(1, 1000):
+    w = Workbook(encoding='utf-8')
+    w.add_sheet('xlwt was here')
+    w.save(filename2+'/company_list.xls')
+    for page in range(1, 500):
+       j = (page-1)*20+1
        if page == 1:
-           get_content(url, filename2)
+           get_content(url, filename2, j)
        else:
            url1= url+'pn'+str(page)
-           get_content(url1, filename2)
+           get_content(url1, filename2, j)
 
-def get_content(url, filename3):
 
+def get_content(url, filename3, j):
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
 
+    rb = open_workbook(filename3+'/company_list.xls')
+    wb = copy(rb)
+    ws = wb.get_sheet(0)
+
     # 找到公司名字，发现她们全部都包含在a标签中
     company4_list = soup.find_all('div', attrs={'class': 'box'})
+
+    print(j)
     for test in company4_list:
-          company_list = test.find_all('dl')
-          for company in company_list:
-              try:
+        company_list = test.find_all('dl')
+        for company in company_list:
+            try:
                 link = company.h4.a['href']
                 content_list = get_content1(link+'company_contact.html')
                 title = content_list[0]
                 people = content_list[1]
-                phone = content_list[0]
-
-                data_list = get_content2(link+'company_map.html')
-                data = data_list[0]
-                black = '     '
+                phone = content_list[2]
+                data = get_content2(link+'company_map.html')
                 print(title)
-                # 这里使用a模式,防止清空文件
-                with open(filename3+'/company_list.xls', 'a') as f:
-                    f.write('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\n'.format(title, black, people, black, phone, black, data))
+                ws.write(j, 0, title)
+                ws.write(j, 1, people)
+                ws.write(j, 2, phone)
+                ws.write(j, 3, data)
+                wb.save(filename3+'/company_list.xls')
+                j = j+1
+            except Exception as e:
+                logging.exception(e)
 
-              except Exception:
-                   #logging.exception(e)
-                   error = []
-                   return error
 
 
 def get_content1(url):
 
     html = get_html(url)
-    soup = bs4.BeautifulSoup(html, 'lxml')
+    selector = etree.HTML(html)
+
+    lable_list = []
     content_list = []
-    people="     "
-    phone="        "
-    cy="      "
-    company1_list = soup.find_all('div', attrs={'class': 'r-content'})
+    content1_list = []
+    content2_list = []
+    company1_list = selector.xpath('//ul[@class="con-txt"]/li/text()')
+    company2_list = selector.xpath('//ul[@class="con-txt"]/li/a/text()')
+
     for test in company1_list:
-          company11_list = test.xpath('//ul[@class="con-txt"]/li/text()')
-          for company in company11_list:
-              lable = company.cssselect('lable')
-              print(lable.text)
-              '''
-              if(content=="联系人"):
-                  people=company.text
-              elif(content=='手机'|content=='电话'):
-                  phone=company.text
-              elif(content=='公司名称'):
-                  cy=company.text
-              '''
-    content_list.append(cy[5:])
-    content_list.append(people[4:])
-    content_list.append(phone[3:])
+           content1_list.append(test)
+    for test in company2_list:
+           content2_list.append(test)
+    for test in selector.xpath('//ul[@class="con-txt"]/li/*/text()'):
+           lable_list.append(test)
+
+    if(lable_list[1]=='手机：'):
+        people = content1_list[0]
+        title = content1_list[2]
+        phone = content1_list[1]
+    else:
+        people = content2_list[0]
+        phone = content1_list[0]
+        title = content1_list[1]
+    content_list.append(title)
+    content_list.append(people)
+    content_list.append(phone)
     return content_list
 
 def get_content2(url):
@@ -137,33 +150,23 @@ def get_content2(url):
     html = get_html(url)
     soup = bs4.BeautifulSoup(html, 'lxml')
     company1_list = soup.find_all('ul', attrs={'class': 'add-txt'})
-    pydata = []
-    for company in company1_list:
-        content = company['lable']
-        if(content=="公司地址"):
-            data = company.text
-        elif(content=='公司官网'):
-            gw = company.text
-        elif(content=='公司电话'):
-            phone = company.text
 
-    pydata.append(data[5:])
-    pydata.append(gw[5:])
-    pydata.append(phone[5:])
-    print(pydata)
+    for test in company1_list:
+          data1 = test.text
+    pydata = data1[5:]
     return pydata
 
 def main():
    base_url= 'http://b2b.huangye88.com/'
 
    base_dir = os.getcwd()
-   sum = base_dir + '/企业名录test'
+   sum = base_dir + '/企业名录'
    if os.path.exists(sum):
        print('开始爬取企业名录')
    else:
        os.mkdir(sum)
 
-   get_qiye1(base_url, sum)
+   get_qiye1(base_url)
 
 
 if __name__ == '__main__':
