@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae1ac555-74b2-4a55-b365-7cf971b5e31c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weather/dog.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/huangye/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weather/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weather/tq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weather/youjian.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/get_data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/get_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/huangye/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/huangye/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/huangye/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/huangye/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/huangye/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/huangye/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/huangye/scrapy.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/test1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川IT企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川LED企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川丝印特印企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川丝网企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川个人贷款企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川二手企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川二手设备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川五金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川交通运输企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川仪器仪表企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川保健品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川养殖企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川农化企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川农机企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川冶金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川创业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川制鞋企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川办公企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川加工企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川包装企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川化工企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川卫浴企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川印刷企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川古玩企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川商务服务企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川园林企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川塑料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川太阳能企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川安防企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川宠物企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川家具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川家居企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川家电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川小家电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川展会企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川工程机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川广告企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川广电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川建材企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川影音企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川房地产企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川教育企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川教育装备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川智能企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川暖通空调企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川服装企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川服饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川机床企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川橡胶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川母婴企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川水产养殖企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川水工业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川水果批发企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川汽修企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川汽车企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川汽车用品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川汽配企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川泵阀企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川涂料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川消防企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川添加剂企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川灯饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川热泵企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川焊接切割企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川物流企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川物流设备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川玩具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川环保企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川玻璃企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川珠宝企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川生活服务企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川电子企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川电气企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川皮具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川皮革企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川石材企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川石油企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川礼品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川种子企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川纸业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川纸管企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川纺织企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川维修企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川网站建设企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川美容美发企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川翻译企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川耐火材料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川能源企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川船舶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川茶叶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川蔬菜企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川表面处理企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川超硬材料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川过滤企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川运动休闲企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川通信企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川酒店企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川钢铁企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川陶瓷企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川零食企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川音响灯光企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川项目企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川食品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川食品机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/四川企业名录/四川饲料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东IT企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东LED企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东丝印特印企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东丝网企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东个人贷款企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东二手企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东二手设备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东五金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东交通运输企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东仪器仪表企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东保健品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东养殖企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东农化企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东农机企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东冶金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东创业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东制鞋企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东办公企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东加工企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东包装企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东化工企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东卫浴企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东印刷企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东古玩企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东商务服务企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东园林企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东塑料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东太阳能企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东安防企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东宠物企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东家具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东家居企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东家电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东小家电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东展会企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东工程机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东广告企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东广电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东建材企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东影音企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东房地产企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东教育企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东教育装备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东智能企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东暖通空调企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东服装企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东服饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东机床企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东橡胶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东母婴企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东水产养殖企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东水工业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东水果批发企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东汽修企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东汽车企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东汽车用品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东汽配企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东泵阀企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东涂料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东消防企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东添加剂企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东灯饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东热泵企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东焊接切割企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东物流企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东物流设备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东玩具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东环保企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东玻璃企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东珠宝企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东生活服务企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东电子企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东电气企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东皮具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东皮革企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东石材企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东石油企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东礼品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东种子企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东纸业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东纸管企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东纺织企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东维修企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东网站建设企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东美容美发企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东翻译企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东耐火材料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东能源企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东船舶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东茶叶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东蔬菜企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东表面处理企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东超硬材料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东过滤企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东运动休闲企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东通信企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东酒店企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东钢铁企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东陶瓷企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东零食企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东音响灯光企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东项目企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东食品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东食品机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/广东企业名录/广东饲料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江IT企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江LED企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江丝印特印企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江个人贷款企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江二手企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江二手设备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江五金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江交通运输企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江仪器仪表企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江保健品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江冶金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江创业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江制鞋企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江办公企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江加工企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江包装企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江化工企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江卫浴企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江印刷企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江古玩企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江商务服务企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江塑料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江太阳能企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江安防企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江宠物企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江家具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江家居企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江家电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江小家电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江展会企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江工程机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江广告企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江广电企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江建材企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江影音企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江房地产企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江教育企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江教育装备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江智能企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江暖通空调企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江服装企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江服饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江机床企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江橡胶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江母婴企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江水工业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江汽修企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江汽车企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江汽车用品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江汽配企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江泵阀企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江消防企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江添加剂企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江灯饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江热泵企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江焊接切割企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江物流企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江物流设备企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江玩具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江环保企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江珠宝企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江生活服务企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江电子企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江电气企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江皮具企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江皮革企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江石油企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江礼品企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江纸业企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江纸管企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江纺织企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江维修企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江网站建设企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江美容美发企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江翻译企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江耐火材料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江能源企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江船舶企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江表面处理企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江超硬材料企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江过滤企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江运动休闲企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江通信企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江酒店企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江钢铁企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江零食企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江音响灯光企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录/浙江企业名录/浙江项目企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录test/广东企业名录/广东五金企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录test/广东企业名录/广东机械企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录test/广东企业名录/广东灯饰企业名录/company_list.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/huangye/企业名录test/广东企业名录/广东电子企业名录/company_list.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/huangye/show3.py" afterPath="$PROJECT_DIR$/huangye/show3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/huangye/test4.py" afterPath="$PROJECT_DIR$/huangye/test4.py" />
+    </list>
+    <ignored path="ZhiHu.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ZhiHu" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tianqi.py" />
+        <option value="$PROJECT_DIR$/huangye/tianqi.py" />
+        <option value="$PROJECT_DIR$/weather/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/weather/utils/helper.py" />
+        <option value="$PROJECT_DIR$/weather/utils/const_value.py" />
+        <option value="$PROJECT_DIR$/weather/youjian.py" />
+        <option value="$PROJECT_DIR$/huangye/show3.py" />
+        <option value="$PROJECT_DIR$/huangye/test.py" />
+        <option value="$PROJECT_DIR$/weather/tq1.py" />
+        <option value="$PROJECT_DIR$/weather/tq.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZhiHu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\PycharmProjects\ZhiHu\weather" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\PycharmProjects\ZhiHu\weather\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.tq">
+    <configuration default="false" name="show3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/huangye" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huangye/show3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tq" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weather" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weather/tq.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="youjian" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weather" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weather/youjian.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/huangye" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huangye/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tq1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weather" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weather/tq1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ZhiHu" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.show3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tq" />
+      <item index="2" class="java.lang.String" itemvalue="Python.youjian" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tq1" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.tq" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tq1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.show3" />
+        <item index="4" class="java.lang.String" itemvalue="Python.youjian" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae1ac555-74b2-4a55-b365-7cf971b5e31c" name="Default" comment="" />
+      <created>1510049809142</created>
+      <option name="number" value="Default" />
+      <updated>1510049809142</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48450243" sideWeight="0.5089286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6150082" sideWeight="0.49107143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6623165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="308" column="8" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="230" column="31" selection-start-line="230" selection-start-column="31" selection-end-line="230" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7363014">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33235294">
+          <caret line="640" column="0" selection-start-line="640" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6181507">
+          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huangye/show3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04452055">
+          <caret line="308" column="8" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/tq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.2037673">
+          <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/youjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04452055">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

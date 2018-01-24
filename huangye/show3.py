@@ -5,11 +5,11 @@ from xlrd import open_workbook
 from xlutils.copy import copy
 from xlwt import *
 from random import choice
+import logging
 import time
 import os
 import re
 from selenium import webdriver
-from multiprocessing import Pool
 
 USER_AGENTS = [
         "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 "
@@ -57,17 +57,16 @@ def get_html(url):
         res = requests.get(url, headers=headers)
         return res.text
     except:
-        return " Something Wrong！ "
+        print(" Something Wrong!")
 
 def get_qiye(url, filename):
     # 342汽摩 363广告传媒 372建材
-    '''
     diqu_url = ['342.htm', '363.htm', '372.htm']
     for url1 in diqu_url:
         link = url+'/search/'+url1
         print(link)
         fanye(link, filename)
-        time.sleep(2)
+        time.sleep(1)
     '''
     # 11739  商务
     diqu_url1 = ['11739.htm']
@@ -76,11 +75,11 @@ def get_qiye(url, filename):
         print(link)
         fanye1(link, filename)
         time.sleep(2)
-
+    '''
 def fanye(url, filename1):
     html = get_html(url)
     selector = etree.HTML(html)
-
+    '''
     # 爬取过快时通过selenium模拟浏览器点击事件继续爬取
     onclick_list = selector.xpath('//a/text()')
     for onclick1 in onclick_list:
@@ -89,7 +88,9 @@ def fanye(url, filename1):
             html1 = get_html(url)
             selector = etree.HTML(html1)
             print('翻页点击成功')
-
+        else:
+            break
+    '''
     # 新建公司类型文件并保存
     title = selector.xpath('//div[@class="navleft"]/a[last()]/text()')
     print(title[0])
@@ -109,16 +110,15 @@ def fanye(url, filename1):
         maxpage = re.search(r'\d+\-\d+', str(fanye_list)).group(0)
         maxpage1 = maxpage[5:]
         print(maxpage1)
-        for page in range(1,int(maxpage1)+1):
-           j = (page-1)*100+1
+        j = 1
+        for page in range(1, int(maxpage1)+1):
            print(page)
            if page == 1:
-               time.sleep(1)
-               get_content(url, filename, j)
+               k = get_content(url, filename, j)
            else:
-               time.sleep(1)
                next_url = url[:-4]+'-'+str(page)+'.htm'
-               get_content(next_url, filename, j)
+               k = get_content(next_url, filename, j)
+           j = k
            # 格式化成2016-03-20 11:45:39形式
            print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     else:
@@ -130,7 +130,7 @@ def fanye(url, filename1):
 def fanye1(url, filename1):
     html = get_html(url)
     selector = etree.HTML(html)
-
+    '''
     # 爬取过快时通过selenium模拟浏览器点击事件继续爬取
     onclick_list = selector.xpath('//a/text()')
     for onclick1 in onclick_list:
@@ -139,7 +139,9 @@ def fanye1(url, filename1):
             html1 = get_html(url)
             selector = etree.HTML(html1)
             print('翻页点击成功')
-
+        else:
+            break
+    '''
     # 新建公司类型文件并保存
     title = selector.xpath('//div[@class="navleft"]/a[last()]/text()')
     print(title[0])
@@ -159,16 +161,16 @@ def fanye1(url, filename1):
         maxpage = re.search(r'\d+\-\d+', str(fanye_list)).group(0)
         maxpage1 = maxpage[6:]
         print(maxpage1)
+        j = 1
         for page in range(1, int(maxpage1)+1):
-           j = (page-1)*100+1
-           print(page)
            if page == 1:
                time.sleep(1)
-               get_content(url, filename, j)
+               k = get_content(url, filename, j)
            else:
                time.sleep(1)
                next_url = url[:-4]+'-'+str(page)+'.htm'
-               get_content(next_url, filename, j)
+               k = get_content(next_url, filename, j)
+           j = k
            # 格式化成2016-03-20 11:45:39形式
            print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     else:
@@ -196,11 +198,13 @@ def get_content(url, filename3, j):
     '''
     onclick_list = selector.xpath('//a/text()')
     for onclick1 in onclick_list:
-        if onclick1=='点击继续':
+        if onclick1 == '点击继续':
             onclick(url)
             html1 = get_html(url)
             selector = etree.HTML(html1)
             print('获取地址点击')
+        else:
+            break
     company1_list = selector.xpath('//div[@class="box"]/div[@class="boxcontent"]/ul[@class="companylist"]/li//div[@class="f_l"]/h4/a')
     for company in company1_list:
         link = company.xpath('@href')
@@ -210,13 +214,16 @@ def get_content(url, filename3, j):
         content1_list = get_content1(href)
         # 判断list是否为空
         if content1_list:
-            ws.write(j, 0, title[0])
-            for i in range(len(content1_list)):
-                ws.write(j, i+1, content1_list[i])
+             if content1_list[1]:
+                ws.write(j, 0, title[0])
+                for i in range(len(content1_list)):
+                     ws.write(j, i+1, content1_list[i])
+                j = j+1
+                wb.save(filename3+'/company_list.xls')
         else:
             break
-        wb.save(filename3+'/company_list.xls')
-        j = j+1
+    print(j)
+    return j
 
 def get_content1(url):
     time.sleep(1)
@@ -227,11 +234,13 @@ def get_content1(url):
     '''
     onclick_list = selector.xpath('//a/text()')
     for onclick1 in onclick_list:
-        if onclick1=='点击继续':
+        if onclick1 == '点击继续':
              onclick(url)
              html1 = get_html(url)
              selector = etree.HTML(html1)
              print('获取详细信息点击')
+        else:
+            break
     onclick1_list = selector.xpath('//dl[@class="codl"]//dd/a')
     content1_list = selector.xpath('//div[@id="contact"]//dl[@class="codl"]/dd/text()')
     people = []
@@ -273,29 +282,30 @@ def main():
    #   辽宁 黑龙江 贵州
    diqu_url1 =['shenyang', 'dalian', 'anshan', 'dandong', 'jinzhou', 'yingkou', 'tieling', 'huludao', 'benxi',  'chaoyang' ,'fushun', 'panjin', 'liaoyang', 'fuxin',
                'jiamusi', 'jixi', 'heihe',  'yichunshi', 'qitaihe', 'daxinganling', 'haerbin', 'qiqihaer', 'mudanjiang', 'daqing', 'suihua', 'hegang', 'shuangyashang',
-               'guiyang', 'zunyi', 'qiandongnan', 'liupanshui', 'qiannan', 'bijie', 'anshun',  
-               #差两个
+               'guiyang', 'zunyi', 'qiandongnan', 'liupanshui', 'qiannan', 'bijie', 'anshun', 'tongren', 'qianxinan'
                ]
-   diqu_url11 =['tongren', 'qianxinan']
    #  湖南
-   hunan_url =['changsha', 'zhuzhou', 'yueyang', 'changde', 'hengyang', 'shaoyang',
-               'xiangtan', 'chenzhou', 'huaihua',  'yiyang', 'yongzhou', 'loudi', 'xianxi', 'zhangjiajie'
+   hunan_url =['changsha', 'zhuzhou', 'yueyang', 'changde', 'hengyang', 'shaoyang', 'xiangtan', 'chenzhou', 'huaihua', 'yiyang', 'yongzhou', 'loudi',
+              'xianxi', 'zhangjiajie'
                ]
-   # 四川
-   sichuang_url =['chengdu', 'mianyang', 'deyang', 'yibin', 'nanchong', 'zigong','neijiang',
-                  'luzhou', 'leshan',  'dazhou', 'guangyuan', 'panzhihua', 'meishan', 'liangshan',
+   # 四川 
+   sichuang_url =['chengdu', 'mianyang', 'deyang', 'yibin', 'nanchong', 'zigong','neijiang', 'luzhou', 'leshan',  'dazhou', 'guangyuan', 'panzhihua', 'meishan', 'liangshan',
                   'guangan', 'ziyang', 'suining', 'yaan', 'bazhong', 'aba', 'ganzi'
                   ]
-   diqu_url = diqu_url11
+   # 浙江  'hangzhou', 'wenzhou', 'ningbo',
+   zhejiang_url =[ 'jinhua', 'taizhou', 'jiaxing','shaoxing','huzhou', 'lishui',  'quzhou', 'zhoushan']
+   # 上海
+   shanghai_url =['shanghai']
+   diqu_url = zhejiang_url
    # 地区类型
    base_url= 'http://www.11467.com/guangzhou/search/340.htm'
    # 单页面
    qiye_url ='http://guangzhou52221863.cn.cnlinfo.net/lianxiwomen/'
    base_dir = os.getcwd()
-   sum = base_dir + '/湖南四川企业名录'
+   sum = base_dir + '/test1'
    #sum = base_dir + '/贵州企业名录'
    if os.path.exists(sum):
-       print('开始爬取湖南四川企业名录')
+       print('开始爬取test名录')
    else:
        os.mkdir(sum)
 
@@ -307,7 +317,6 @@ def main():
        else:
           os.mkdir(sum1)
        get_qiye(diqu_url2, sum1)
-
    #get_qiye1(base_url, sum)
    # get_qiye2(diqu_url, sum)
    # fanye(base_url, sum)

@@ -167,7 +167,7 @@ def main():
    base_url= 'http://b2b.huangye88.com/'
 
    base_dir = os.getcwd()
-   sum = base_dir + '/企业名录'
+   sum = base_dir + '/企业名录test'
    if os.path.exists(sum):
        print('开始爬取企业名录')
    else:
