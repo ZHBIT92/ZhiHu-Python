@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 import re
 import scrapy
+import datetime
 from scrapy.http import Request
 from urllib import parse
 from ArticleSpider.items import JobBoleAeticleItem
+from ArticleSpider.utils.common import get_md5
 
 class JobboleSpider(scrapy.Spider):
     name = 'jobbole'
@@ -92,17 +94,17 @@ class JobboleSpider(scrapy.Spider):
         tags = ",".join(tag_list)
 
         # 填充传值
-        '''
+
         article_item["url_object_id"] = get_md5(response.url)
         article_item["title"] = title
         article_item["url"] = response.url
-
+        # 调用datetime类把数据改为日期形式
         try:
            create_date = datetime.datetime.strptime(create_date, "%Y/%m/%d").date()
         except Exception as e:
            create_date = datetime.datetime.now().date()
-        '''
         article_item["create_date"] = create_date
+        # front_image_url是数组形式
         article_item["front_image_url"] = [front_image_url]
         article_item["praise_nums"] = praise_nums
         article_item["comment_nums"] = comment_nums

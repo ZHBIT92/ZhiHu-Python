@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import os
 # Scrapy settings for ArticleSpider project
 #
 # For simplicity, this file contains only settings considered important or
@@ -65,8 +65,19 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
+    #'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
+    'ArticleSpider.pipelines.JsonExporterPipleline': 2,
+    #'scrapy.pipelines.images.ImagesPipeline': 1,
+    'ArticleSpider.pipelines.ArticleImagePipeline': 1,
 }
+IMAGES_URLS_FIELD = "front_image_url"
+# abspath获取当前目录 dirname获取目录名称 join拼接
+project_dir = os.path.abspath(os.path.dirname(__file__))
+IMAGES_STORE = os.path.join(project_dir, 'images')
+
+# 设置选择要下载图片的规模
+# IMAGES_MIN_HEIGHT = 100
+# IMAGES_MIN_WIDTH = 100
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
