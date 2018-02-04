@@ -66,9 +66,10 @@ ROBOTSTXT_OBEY = False
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     #'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
-    'ArticleSpider.pipelines.JsonExporterPipleline': 2,
+    #'ArticleSpider.pipelines.JsonExporterPipleline': 2,
     #'scrapy.pipelines.images.ImagesPipeline': 1,
-    'ArticleSpider.pipelines.ArticleImagePipeline': 1,
+    #'ArticleSpider.pipelines.ArticleImagePipeline': 1,
+    'ArticleSpider.pipelines.MysqlTwistedPipline': 1,
 }
 IMAGES_URLS_FIELD = "front_image_url"
 # abspath获取当前目录 dirname获取目录名称 join拼接
@@ -99,3 +100,13 @@ IMAGES_STORE = os.path.join(project_dir, 'images')
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+MYSQL_HOST = "localhost"
+MYSQL_DBNAME = "article_spider"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = ""
+
+
+SQL_DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
+SQL_DATE_FORMAT = "%Y-%m-%d"

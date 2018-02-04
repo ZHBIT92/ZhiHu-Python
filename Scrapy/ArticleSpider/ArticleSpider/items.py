@@ -13,8 +13,9 @@ class ArticlespiderItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
+
 # 只有一种类型Field
-class JobBoleAeticleItem(scrapy.Item):
+class JobBoleArticleItem(scrapy.Item):
     title = scrapy.Field()
     create_date = scrapy.Field()
     url = scrapy.Field()
